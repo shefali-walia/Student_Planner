@@ -57,7 +57,7 @@ $$\text{Score} = \text{Base Importance} + \text{Urgency Bonus} + \text{Category 
 * **Persistence:** Local JSON Engine
 
 ## 💾 Installation
-1.  Clone the repo: `git clone https://github.com/yourusername/student-ledger.git`
+1.  Clone the repo: `git clone https://github.com/shefaliwalia04-gif/Student_Planner.git`
 2.  Install dependencies: `pip install -r requirements.txt`
 3.  Run the app: `streamlit run main.py`
 
