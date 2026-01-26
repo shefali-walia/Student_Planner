@@ -299,7 +299,7 @@ def open_planner_popup(task_id):
                 unsafe_allow_html=True
             )
     else:
-        st.info("No steps added yet. Add steps below OR just launch to treat the whole task as one session.")
+        st.info("You can break your task into manageable chunks here to work on it one step at a time OR just launch to tackle the whole task in one session.")
 
     st.write("---")
     
@@ -672,4 +672,5 @@ elif view == "Reflection":
         if st.button("🗑️ Clear History"):
             user_data["history"] = []
             save_data(st.session_state.username, user_data)
+
             st.rerun()
