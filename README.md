@@ -47,8 +47,9 @@ $$\text{Score} = \text{Base Importance} + \text{Urgency Bonus} + \text{Category 
 *Given 48 more hours, I would implement:*
 1.  **Cloud Database:** I would migrate from JSON to **PostgreSQL** (via Supabase) to enable real-time sync across mobile and desktop without manual backups.
 2.  **AI Breakdown:** I would integrate the Gemini API to allow students to type "Study for Bio Exam" and have the AI auto-generate the 5 specific study steps.
-3.  **Focus Ambience:** I would embed a "Lofi Beats" player directly into the Focus Timer popup to reduce friction when starting work.
-
+3.  **Ambient Music:** I would embed a "Lofi Beats" or "White Noise" player directly into the Focus Timer popup to reduce friction when starting work.
+4.  **Interactive Calender:** I would make the calender tab interactive so the user would be able to click on a day and get a list of tasks due that day and able to navigate to them through the caender itself.
+5.  **Weekly Overview:** In the calender/reflection tab, I would add weekly view/overview option as well.
 ---
 
 ## 🛠️ Tech Stack
@@ -62,4 +63,5 @@ $$\text{Score} = \text{Base Importance} + \text{Urgency Bonus} + \text{Category 
 3.  Run the app: `streamlit run main.py`
 
 ---
+
 
