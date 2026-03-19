@@ -180,7 +180,7 @@ if not st.session_state.logged_in:
 # LOAD DATA
 user_data = load_data(st.session_state.username)
 
-# --- 5. NAVIGATION ---
+# --- 5. NAVIGATION SIDEBAR ---
 with st.sidebar:
     st.title("📖 Navigation")
     view = st.radio("Go to:", ["Command Center", "Reflection", "Calendar"])
