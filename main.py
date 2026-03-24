@@ -38,7 +38,7 @@ def load_data(username):
                 "Clubs": {"color": "#F0EAD6", "text": "#1A1110"},
                 "Personal": {"color": "#FFF8DC", "text": "#1A1110"}
             },
-            "common_steps": ["Read Material", "Make Notes", "Drafting", "Review", "Practice Problems"]
+            "common_steps": ["Read Material", "Make Notes", "Make draft", "Revise Ch1", "Practice Problems"]
         }
 
 def save_data(username, data):
