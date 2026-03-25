@@ -7,7 +7,7 @@ import calendar
 import altair as alt
 from datetime import date, datetime, timedelta
 
-# --- 1. DATA ENGINE ---
+# 1. DATA ENGINE
 def load_data(username):
     filename = f"{username}_planner_v22.json"
     if os.path.exists(filename):
@@ -64,18 +64,19 @@ def mark_task_complete(username, task_id):
         return True
     return False
 
-# --- 2. LOGIC ---
-def get_priority_score(deadline, importance, category):
+# 2. LOGIC - this block of code is the main logic behind how we prioritize tasks to show in the command center.
+# The score is used to sort tasks in the UI, with higher scores appearing first. 
+def get_priority_score(deadline, importance, category): #we calculate priority based on 3 factors
     today = date.today()
     is_urgent = False
     if deadline:
         days_left = (deadline - today).days
-        if days_left <= 2: is_urgent = True
+        if days_left <= 2: is_urgent = True #task due within 2 days is considered urgent
     
     imp_map = {"Low": 20, "Medium": 45, "High": 70}
     base_score = imp_map.get(importance, 20)
     if is_urgent: base_score += 30
-    if category == "Academics": base_score += 15
+    if category == "Academics": base_score += 15 #academic tasks are more imp. for students
     return base_score
 
 # --- 3. UI THEME ---
